@@ -54,24 +54,24 @@ Ce projet a pour but de :
 
 # 📂 Structure du projet
 fcc-react-learning/
-│
-├── exercises/
-│ ├── react-components/
-│ ├── react-state/
-│ ├── react-events/
-│
-├── mini-projects/
-│ ├── counter-app/
-│ ├── calculator/
-│ ├── markdown-preview/
-│
-└── README.md
+│  
+├── exercises/  
+│ ├── react-components/  
+│ ├── react-state/  
+│ ├── react-events/  
+│  
+├── mini-projects/  
+│ ├── counter-app/  
+│ ├── calculator/  
+│ ├── markdown-preview/  
+│  
+└── README.md  
 
 Chaque dossier contient généralement :
-project-name/
-│── index.html
-│── styles.css
-│── script.js
+project-name/  
+│── index.html  
+│── styles.css  
+│── script.js  
 
 
 ---
