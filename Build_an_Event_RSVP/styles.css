@@ -1,0 +1,136 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0f4f8;
+  font-family: "Segoe UI", sans-serif;
+  padding: 2rem;
+}
+
+.form-wrap {
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 2.5rem;
+  width: 100%;
+  max-width: 480px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.07);
+}
+
+h1 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #2d3748;
+  margin-bottom: 0.4rem;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  margin-top: 1.5rem;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #4a5568;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"] {
+  padding: 0.65rem 1rem;
+  border: 1.5px solid #e2e8f0;
+  border-radius: 10px;
+  font-size: 0.95rem;
+  color: #2d3748;
+  background-color: #f7fafc;
+  transition:
+    border-color 0.2s,
+    box-shadow 0.2s;
+  outline: none;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus {
+  border-color: #a78bfa;
+  box-shadow: 0 0 0 3px rgba(167, 139, 250, 0.15);
+  background-color: #ffffff;
+}
+
+label:has(input[type="checkbox"]) {
+  flex-direction: row;
+  align-items: center;
+  gap: 0.75rem;
+  cursor: pointer;
+}
+
+input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  accent-color: #a78bfa;
+  cursor: pointer;
+}
+
+button[type="submit"] {
+  margin-top: 0.5rem;
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #a78bfa;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition:
+    background-color 0.2s,
+    transform 0.1s;
+}
+
+button[type="submit"]:hover {
+  background-color: #8b5cf6;
+}
+
+button[type="submit"]:active {
+  transform: scale(0.98);
+}
+
+.form-wrap > div:last-child {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background-color: #f5f3ff;
+  border-radius: 12px;
+  border-left: 4px solid #a78bfa;
+}
+
+.form-wrap > div:last-child h2 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #6d28d9;
+  margin-bottom: 1rem;
+}
+
+.form-wrap > div:last-child p {
+  font-size: 0.9rem;
+  color: #4a5568;
+  padding: 0.4rem 0;
+  border-bottom: 1px solid #ede9fe;
+}
+
+.form-wrap > div:last-child p:last-child {
+  border-bottom: none;
+}
